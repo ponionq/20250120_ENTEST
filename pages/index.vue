@@ -1,7 +1,7 @@
 <template>
     <swiper :navigation="true" :modules="[Navigation]" class="mainVisual  2xl:h-[46.6875rem] md:h-[31.25rem] h-[24rem]">
         <swiper-slide
-            class="bg-[url('/images/visual_bg1.png')] bg-cover bg-center bg-no-repeat"
+            class="bg-[url('/public/images/visual_bg1.png')] bg-cover bg-center bg-no-repeat"
             v-for="i in 3"
             :key="i"
         >
@@ -24,28 +24,28 @@
 	<div class="2xl:px-28 px-5">
 		<div class="grid md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 max-w-screen-2xl mx-auto 2xl:my-40 my-20 gap-7">
 			<Card
-				bg="/images/card_img1.png"
+				bg="/public/images/card_img1.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
                 data-aos="fade-up" data-aos-delay="0"
 			/>
 			<Card
-				bg="/images/card_img2.png"
+				bg="/public/images/card_img2.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
                 data-aos="fade-up" data-aos-delay="50"
 			/>
 			<Card
-				bg="/images/card_img3.png"
+				bg="/public/images/card_img3.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
                 data-aos="fade-up" data-aos-delay="100"
 			/>
 			<Card
-				bg="/images/card_img4.png"
+				bg="/public/images/card_img4.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
