@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: "2025-01-20",
-    css: ["@/assets/styles/tailwind.css"],
+    css: ["@/assets/styles/tailwind.css",'aos/dist/aos.css'],
     devtools: {
         enabled: true,
         timeline: {
@@ -24,5 +24,5 @@ export default defineNuxtConfig({
             ],
         },
     },
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss", "nuxt-aos"],
 });

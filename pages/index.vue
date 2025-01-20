@@ -6,7 +6,7 @@
             :key="i"
         >
             <div class="max-w-screen-2xl text-white mx-auto h-full flex items-center  lg:w-10/12 2xl:p-0 px-5">
-                <div>
+                <div class="fade-in-up">
                     <p class=" text-3xl leading-tight font-extrabold 2xl:text-7xl md:text-5xl">
                         Lorem ipsum <br />
                         dolor sit amet,
@@ -28,24 +28,28 @@
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
+                data-aos="fade-up" data-aos-delay="0"
 			/>
 			<Card
 				bg="/images/card_img2.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
+                data-aos="fade-up" data-aos-delay="50"
 			/>
 			<Card
 				bg="/images/card_img3.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
+                data-aos="fade-up" data-aos-delay="100"
 			/>
 			<Card
 				bg="/images/card_img4.png"
 				title="Lorem ipsum <br /> dolor sit amet,"
 				content="Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,"
 				subTxt="Lorem ipsum dolor sit amet,"
+                data-aos="fade-up" data-aos-delay="150"
 			/>
 		</div>
 	</div>
@@ -53,7 +57,7 @@
     <div class="flex items-center justify-center bg-gray-200 py-12 2xl:px-28 px-5 ">
         <div class="mx-auto w-full max-w-screen-2xl">
             <form action="https://formbold.com/s/FORM_ID" method="POST">
-                <div class="mb-5">
+                <div class="mb-5"  data-aos="fade-up">
                     <label for="name" class="mb-3 block text-base font-medium text-[#07074D]"> 성함 </label>
                     <input
                         type="text"
@@ -63,7 +67,7 @@
                         class="w-full rounded-md border border-[#e0e0e0] bg-white 2xl:py-3 py-2 2xl:px-6 px-3 text-base font-medium text-[#1c1d1c] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
                 </div>
-                <div class="mb-5">
+                <div class="mb-5"  data-aos="fade-up">
                     <label for="email" class="mb-3 block text-base font-medium text-[#07074D]"> 이메일 </label>
                     <input
                         type="email"
@@ -73,7 +77,7 @@
                         class="w-full rounded-md border border-[#e0e0e0] bg-white 2xl:py-3 py-2 2xl:px-6 px-3 text-base font-medium text-[#1c1d1c] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
                 </div>
-                <div class="mb-5">
+                <div class="mb-5"  data-aos="fade-up">
                     <label for="message" class="mb-3 block text-base font-medium text-[#07074D]">내용</label>
                     <textarea
                         rows="4"
@@ -83,7 +87,7 @@
                         class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white 2xl:py-3 py-2 2xl:px-6 px-3 text-base font-medium text-[#1c1d1c] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     ></textarea>
                 </div>
-                <div>
+                <div  data-aos="fade-up">
                     <button
                         class="hover:shadow-form rounded-md bg-[#6A64F1] 2xl:py-3 py-2 2xl:px-6 px-4 text-base font-semibold text-white outline-none"
                     >
@@ -121,6 +125,21 @@ import { Navigation } from "swiper/modules";
 }
 ::v-deep(.swiper-button-prev) {
     left: 1.25rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swiper-slide-active .fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 @media (min-width: 1536px){

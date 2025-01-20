@@ -60,6 +60,7 @@ useHead({
 <style>
 body {
     color: #1c1d1c;
+    overflow-x: hidden;
 }
 
 footer img {

@@ -1,3 +1,3 @@
 <template>
-    <div>contact.vue</div>
+    <Preparing />
 </template>
