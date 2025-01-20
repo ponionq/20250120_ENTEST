@@ -8,10 +8,6 @@ export default defineNuxtConfig({
             enabled: true,
         },
     },
-    ssr: false, 
-    nitro : {
-        preset : 'https://ponionq.github.io/' 
-    },
     app: {
         head: {
             charset: "utf-8",
@@ -27,8 +23,6 @@ export default defineNuxtConfig({
                 },
             ],
         },
-        baseURL : '/20250120_ENTEST/' 
     },
     modules: ["@nuxtjs/tailwindcss", "nuxt-aos"],
-    
 });
