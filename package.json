@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "homepage": "https://ponionq.github.io/20250120_ENTEST",
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
