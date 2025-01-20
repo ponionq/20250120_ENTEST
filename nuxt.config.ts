@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         },
     },
     app: {
+        baseURL: '/20250120_ENTEST/',
         head: {
             charset: "utf-8",
             viewport:
