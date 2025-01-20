@@ -1,13 +1,13 @@
 <template>
-    <nav>
-        <ul class="flex gap-x-11 text-2xl font-semibold">
-            <li>
-                <NuxtLink to="/" class="link" style="hover: bg-sky-700">HOME</NuxtLink>
+    <nav class="w-full md:w-auto">
+        <ul class="flex gap-x-11 2xl:text-[1.3125rem] md:text-lg font-semibold md:justify-start justify-center">
+            <li  class="hover:text-amber-400">
+                <NuxtLink to="/" class="link">HOME</NuxtLink>
             </li>
-            <li>
+            <li class="hover:text-amber-400">
                 <NuxtLink to="/about">ABOUT</NuxtLink>
             </li>
-            <li>
+            <li class="hover:text-amber-400">
                 <NuxtLink to="/contact">CONTACT</NuxtLink>
             </li>
         </ul>
@@ -15,7 +15,5 @@
 </template>
 
 <style scoped>
-nav ul {
-    font-size: 1.3125rem;
-}
+
 </style>

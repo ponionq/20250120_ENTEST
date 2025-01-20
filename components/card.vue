@@ -1,13 +1,13 @@
 <template>
-    <div class="card">
-        <div class="card_inner rounded shadow-custom overflow-hidden">
-            <div class="bg-cover bg-center bg-no-repeat h-48" :style="{ backgroundImage: `url('${bg}');` }"></div>
-            <div class="card_contents p-7 flex flex-wrap">
+    <div class="2xl:min-h-[30.1875rem] md:min-h-[24rem] min-h-auto">
+        <div class="rounded shadow-custom overflow-hidden h-full">
+            <div class="bg-center bg-no-repeat h-48 w-full bg-cover" :style="{ backgroundImage: `url('${bg}');` }"></div>
+            <div class=" card-contents 2xl:p-7 p-4 flex flex-wrap 2xl:min-h-[18.375rem]">
                 <div class="w-full">
-                    <h3 v-html="title" class="font-extrabold leading-tight"></h3>
-                    <p v-html="content" class="text-lg my-3 font-medium"></p>
+                    <h3 v-html="title" class="font-extrabold leading-tight 2xl:text-[1.9375rem] sm:text-2xl"></h3>
+                    <p v-html="content" class="2xl:text-lg 2xl:my-3 my-1 font-medium text-[#424242]"></p>
                 </div>
-                <p class="mt-auto">{{ subTxt }}</p>
+                <p class="2xl:mt-auto text-[#bdbdbd] mt-2">{{ subTxt }}</p>
             </div>
         </div>
     </div>
@@ -33,17 +33,7 @@ defineProps({
 });
 </script>
 <style scoped>
-.card_contents {
-    min-height: 18.375rem;
-}
-.card_contents h3 {
-    font-size: 1.9375rem;
-}
-.card_contents h3 + p {
-    color: #424242;
-}
-.card_contents div + p {
-    color: #bdbdbd;
-    font-size: 1rem;
+.card-contents {min-height: calc(100% - 12rem);
+aspect-ratio: ;
 }
 </style>
