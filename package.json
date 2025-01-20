@@ -7,13 +7,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .output",
     "homepage": "https://ponionq.github.io/20250120_ENTEST"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "nuxt": "^3.15.2",
     "nuxt-aos": "^1.2.5",
     "swiper": "^11.2.1",
