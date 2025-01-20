@@ -33,7 +33,5 @@ defineProps({
 });
 </script>
 <style scoped>
-.card-contents {min-height: calc(100% - 12rem);
-aspect-ratio: ;
-}
+.card-contents {min-height: calc(100% - 12rem);}
 </style>
